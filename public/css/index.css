@@ -1,0 +1,47 @@
+.navbar-text {
+    margin-right: 10px;
+    color: #D3D2CC !important;
+}
+
+.navbar {
+    background-color: #46473F;
+    border: 0;
+    border-radius: 0;
+}
+
+.nav li:nth-child(2) {
+    margin-left: 50px;
+}
+
+.nav li:nth-child(2),
+.nav li:nth-child(3) {
+    color: #D3D2CC !important;
+    background-color: #080808;
+}
+
+.bg-primary {
+    background-color: #337ab7 !important;
+}
+
+.col-xs-10 .list-group li:nth-child(1) {
+    background-color: #f5f5f5 !important;
+}
+
+.form-control {
+    outline: none !important;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+td {
+    vertical-align: baseline !important;
+}

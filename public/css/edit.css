@@ -1,0 +1,8 @@
+#inputfile:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+#inputfile {
+    outline: none !important;
+}

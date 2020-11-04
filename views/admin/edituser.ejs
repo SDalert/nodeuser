@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lib/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/edit.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/lib/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar  navbar-inverse">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="">LOGO</a></li>
+                <li><a href="">商品管理</a></li>
+                <li><a href="">系统设置</a></li>
+            </ul>
+            <p class="navbar-text navbar-right">安全退出</p>
+            <p class="navbar-text navbar-right">欢迎你</p>
+        </div>
+        </div>
+    </nav>
+    <div class="col-xs-2">
+        <ul class="list-group">
+            <li class="bg-primary list-group-item ">商品管理</li>
+            <a href="/admin/productlist" class="list-group-item">商品列表</a>
+            <a href="/admin/addproduct" class="list-group-item">增加商品</a>
+            <li class="bg-primary list-group-item ">用户管理</li>
+            <a href="/admin/userlist" class="list-group-item">用户列表</a>
+            <a href="/admin/adduser" class="list-group-item">增加用户</a>
+            <li class="bg-primary list-group-item ">分类管理</li>
+            <a href="" class="list-group-item">商品分类列表</a>
+            <a href="" class="list-group-item">增加商品分类</a>
+        </ul>
+    </div>
+    <div class="col-xs-10">
+        <ol class="breadcrumb">
+            <li>用户管理</li>
+            <li>用户列表</li>
+        </ol>
+    </div>
+    <div class="col-xs-10">
+        <ul class="list-group">
+            <li class="list-group-item">修改用户</li>
+            <li class="list-group-item">
+                <form class="form-horizontal" method="POST" action="doedituer?id=<%= list._id%>">
+                    <div class="form-group">
+                        <label for="inputfile" class="col-sm-1 control-label">用户名:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="username" id="inputEmail3" placeholder="" value="<%=list.username%>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputprice" class="col-sm-1 control-label">性别:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="usersex" id="inputprice" placeholder="" value="<%=list.usersex%>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputprices" class="col-sm-1 control-label">年龄:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="userage" id="inputprices" placeholder="" value="<%=list.userage%>">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputtitle" class="col-sm-1 control-label">地址:</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" name="useradress" id="inputprices" placeholder="" value="<%=list.useradress%>">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class=" col-sm-1">
+                            <button type="submit" class="btn btn-default">修改</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
